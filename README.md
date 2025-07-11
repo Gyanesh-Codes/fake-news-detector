@@ -15,6 +15,9 @@ A modern web application built with Streamlit to showcase my machine learning mo
 - Python 3.8 or higher
 - Your `fake_news_model.pkl` file in the project directory
 
+
+#DATASET USED : https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset/data?select=True.csv
+
 ## 🛠️ Installation
 
 1. **Clone or download this project**
