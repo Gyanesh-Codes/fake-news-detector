@@ -2,7 +2,6 @@ import streamlit as st
 import joblib
 import datetime
 import requests
-import streamlit_lottie as st_lottie
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
@@ -29,14 +28,7 @@ def load_model():
 
 model = load_model()
 
-# ----------------------------- LOAD ANIMATION ----------------------------- #
-def load_lottieurl(url: str):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
-
-lottie_news = load_lottieurl("https://lottie.host/8b2fcf5c-6595-4a99-a1c3-0581c103c9c6/Kk0PgUJhYj.json")
+# ----------------------------- APP CONFIGURATION ----------------------------- #
 
 # ----------------------------- SIDEBAR ----------------------------- #
 st.sidebar.title("📰 Fake News Detector")
@@ -58,9 +50,8 @@ st.sidebar.caption("© 2025 | LAVA IIT GUWAHATI Summer Project")
 st.title("📰 Fake News Detection App")
 st.markdown("### Paste a news article below to check if it's **Real** or **Fake**.")
 
-# Show animation
-if lottie_news:
-    st_lottie.st_lottie(lottie_news, height=180)
+# Add a nice header image or emoji
+st.markdown("---")
 
 # Create tabs for different features
 tab1, tab2, tab3 = st.tabs(["🔍 Single Prediction", "📊 Batch Analysis", "📈 Model Info"])
