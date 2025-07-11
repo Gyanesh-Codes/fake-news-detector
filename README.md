@@ -16,7 +16,7 @@ A modern web application built with Streamlit to showcase my machine learning mo
 - Your `fake_news_model.pkl` file in the project directory
 
 
-#DATASET USED : https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset/data?select=True.csv
+#DATASET USED : https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset
 
 ## 🛠️ Installation
 
